@@ -114,6 +114,10 @@ def decide():
     if switch==2 and p2_getin==True:
         p2score=p2score+val
         next_round()
+    if p1score>=3000:
+         print "Congratulations!!! ",p1," you won!"
+    if p2score>=3000:
+         print "Congratulations!!! ",p2," you won!"
 
     else:
         print val
@@ -127,11 +131,7 @@ def next_round():
          throw_next()
      if o=='N' or o=='n':
         switchplayers()
-     if p1score>=3000:
-         print "Congratulations!!! ",p1," you won!"
-     if p2score>=3000:
-         print "Congratulations!!! ",p2," you won!"
-
+     
      else:
          next_round()
 
